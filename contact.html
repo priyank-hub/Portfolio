@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    </head>
+    <body style="background: #252934;">
+        <section style="height: 100vh;">
+            <div class="form" style="position: relative; width: 100%; text-align: center; height: 100%;">
+                <div class="headline load-hidden">CONTACT</div>
+                <div class="line widget" style="background: white; height: 0.4vh; width: 70%; position: relative; top: 16vh; left: 13vw;"></div>
+
+                    <p class="haveu" style="font-family: 'Raleway'; font-size: 1.3vw; font-weight: 400; color: 
+                        rgb(0, 255, 221); width: 100%; text-align: center; position: relative; top: 20vh;">Have a question or want to work together?</p>
+            
+                    <form action="https://formspree.io/xyynynba" method="POST">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                        <input type="text" id="email" name="email" placeholder="Email.."><br>
+                    
+                        <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+                    
+                        <input type="submit" value="Submit" id="submit">
+                        <button class="back"><a href="./index.html">Go Back</a></button>
+                    </form>
+            </div>
+        </section>
+
+        <script>
+            ScrollReveal().reveal('.headline', { delay: 100 });
+            ScrollReveal().reveal('.widget', { delay: 300 });
+            ScrollReveal().reveal('.haveu', { delay: 600 });
+            ScrollReveal().reveal('#fname', { delay: 1000 });
+            ScrollReveal().reveal('#email', { delay: 1300 });
+            ScrollReveal().reveal('#message', { delay: 1500 });
+            ScrollReveal().reveal('#submit', { delay: 2000 });
+        </script>
+    </body>
+</html>
+

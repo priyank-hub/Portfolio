@@ -59,7 +59,7 @@ li {
     display: block;
     color: black;
     text-align: center;
-    padding: 10px 14px;
+    /* padding: 10px 14px; */
     text-decoration: none !important;
     font-size: 1.3rem;
     font-weight: 400;
@@ -122,5 +122,26 @@ li {
 
   .sn a:hover, .aaa {
     background-color: #aaadbb !important;
+  }
+
+  .animate {
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
   }
  

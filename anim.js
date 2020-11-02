@@ -1,7 +1,6 @@
 flag = 0;
 flag1 = 0; 
-function active(a) {
-    
+function active(a) {  
     if(flag == 0){
         var x = document.getElementById("active");
         x.classList.remove("highcolor");
@@ -10,7 +9,6 @@ function active(a) {
     }
     else{
         var b = document.querySelector(".highcolor");
-        console.log(b.classList);
         b.classList.remove("highcolor");
         a.classList.add("highcolor");
         
@@ -19,25 +17,16 @@ function active(a) {
 
 function collap() {
     var f = document.querySelector(".collapse");
-    console.log(f);
+    var n = document.querySelector(".sticky-top");
     if (flag1 === 0){
         f.classList.add("show");
+        n.classList.add("animate");
         flag1 = 1;
     }
     else if (flag1 === 1){
         f.classList.remove("show");
+        n.classList.remove("animate");
         flag1 = 0;
-    }
-}
-
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    console.log(x.className);
-    if (x.className === "topnav sticky-top") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav sticky-top";
     }
 }
 

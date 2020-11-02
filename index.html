@@ -3,9 +3,9 @@
 <head>
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style2.css">
-	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style2.css">
+	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="hexagon2.css">
@@ -53,7 +53,7 @@
 	<section class="one" id="home" style="height: 100vh">
 		<div style="position: relative; height: 100%">
 			<div class="pic">
-				<img class="prosym" src="./head/p.png">
+				<img class="prosym" src="./assets/head/p.png">
 			</div>
 			<div class="head">
 				<span style="font-family: 'Raleway'; font-size: 4vw; color: #656060;"><p class="up">Hello, I'm <span style="color: white">Priyank</span>.</p> <p class="down">Welcome to my Portfolio</p></span>
@@ -69,19 +69,22 @@
 		</div>
 	</section>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-		<button onclick="collap()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		  <div class="navbar-nav topn">
-			<a href="#home" class="highcolor" id="active">HOME</a>
-			<a href="#two" onclick="active(this)">ABOUT</a>
-			<a href="#three" onclick="active(this)">PROJECTS</a> 
-			<a href="#fourth" onclick="active(this)">CONTACT ME</a>
-		  </div>
-		</div>
-	  </nav>
+	<div class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button onclick="collap()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav topn">
+					<a href="#home" class="highcolor" id="active">HOME</a>
+					<a href="#two" onclick="active(this)">ABOUT</a>
+					<a href="#three" onclick="active(this)">PROJECTS</a> 
+					<a href="#fourth" onclick="active(this)">CONTACT ME</a>
+				</div>
+			</div>
+		</nav>
+		<div style="height: 3px; width: 100%; background-color: #117a8b;"></div>
+	</div>	
 
 	<!-- About -->
 	<section class="second" id="two"> 
@@ -167,22 +170,22 @@
 					</div>
 				</div>
 
-				<img src="./head/drawing.svg" class="hide">
+				<img src="./assets/head/drawing.svg" class="hide">
 
 				<div class="heading" style="margin-top: 50px; color: black; font-weight: 300;">Certifications</div>
 				<div class="card-deck cd">
 					<div class="crd I">
-					  <img src="./cert.png" class="pic1 ap" alt="..." style="width: 90px; height: 100px;">
+					  <img src="./assets/cert.png" class="pic1 ap" alt="..." style="width: 90px; height: 100px;">
 						<p class="h" style="text-align: center; font-size: 1.3rem;">Intro to ML: Language Processing</p>
 						<p class="" style="text-align: center;"><small class="text-muted">Google Developer Group (GDG) Cloud Toronto</small></p>
 					</div>
 					<div class="crd II">
-						<img src="./cert.png" class="pic1 bp" alt="..." style="width: 90px; height: 100px;">	
+						<img src="./assets/cert.png" class="pic1 bp" alt="..." style="width: 90px; height: 100px;">	
 							<p class="h" style="text-align: center; font-size: 1.3rem;">Ruby on Rails 6 Essential Learning</p>
 							<p class="" style="text-align: center;"><small class="text-muted">LinkedIn Learning</small></p>
 					</div>
 					<div class="crd III">
-						<img src="./cert.png" class="pic1 cp" alt="..." style="width: 90px; height: 100px;">	
+						<img src="./assets/cert.png" class="pic1 cp" alt="..." style="width: 90px; height: 100px;">	
 						<p class="h" style="text-align: center; font-size: 1.3rem;">Complete Web Developer 2020: Zero to Mastery</p>
 						<p class="" style="text-align: center;"><small class="text-muted">Udemy</small></p>
 					</div>	
@@ -196,7 +199,7 @@
 		</svg>
 
 		<div class="heading">PROJECTS</div>
-		<div style="position: relative; height: 0.5vh; background-color: white; margin-top: 2.1vh; width: 18%; left: 41%;"></div>
+		<div style="position: relative; height: 2px; background-color: white; margin-top: 2.1vh; width: 18%; left: 41%;"></div>
 		
 		
 
@@ -209,7 +212,7 @@
 
 		<div class="grid-container">
 			<div class="container animate filterDiv primary a1">
-				<img src="./project/tictactoe.jpg" alt="Avatar" class="image">
+				<img src="./assets/project/tictactoe.jpg" alt="Avatar" class="image">
 				<div class="overlay2">
 					<div class="text2">
 						<p>Tic-Tac-Toe</p>
@@ -222,7 +225,7 @@
 				</div>
 			</div>
 			<div class="container animate filterDiv primary a2">
-				<img src="./project/weatherinfo.png" alt="Avatar" class="image">
+				<img src="./assets/project/weatherinfo.png" alt="Avatar" class="image">
 				<div class="overlay2">
 					<div class="text2">
 						<p>WeatherInfo</p>
@@ -234,7 +237,7 @@
 				</div>
 			</div>
 			<div class="container animate filterDiv reactjs a3">
-				<img src="./project/smartbrain.png" alt="Avatar" class="image">
+				<img src="./assets/project/smartbrain.png" alt="Avatar" class="image">
 				<div class="overlay2">
 					<div class="text2">
 						<p>SmartBrain Facial Recognition App</p>
@@ -247,7 +250,7 @@
 			</div>
 			
 			<div class="container animate filterDiv reactjs a4">
-				<img src="./project/robofriends.jpg" alt="Avatar" class="image">
+				<img src="./assets/project/robofriends.jpg" alt="Avatar" class="image">
 				<div class="overlay2">
 					<div class="text2">
 						<p>RoboFriends</p>
@@ -372,21 +375,21 @@
 
 		<div class="flexrow">
 			<a href="https://www.linkedin.com/in/priyank9" class="flexcolumn linkedin" style="cursor: pointer;" target="blank">
-				<img src="linkedin.png">
+				<img src="./assets/linkedin.png">
 			</a>
 			<a href="https://www.facebook.com/profile.php?id=100005557957435" class="flexcolumn" style="cursor: pointer;" target="blank">
-				<img src="facebook.png">
+				<img src="./assets/facebook.png">
 			</a>
 			<a href="https://github.com/priyank-hub" class="flexcolumn" style="cursor: pointer;" target="blank">
-				<img src="github.png">
+				<img src="./assets/github.png">
 			</a>
 			<a href="https://www.instagram.com/p1ku_22/" class="flexcolumn" style="cursor: pointer;" target="blank">
-				<img src="instagram.png">
+				<img src="./assets/instagram.png">
 			</a>
 		</div>
 	</section>
 	<canvas class="background"></canvas>
-	<script src="./particles.min.js"></script>	
+	<script src="./assets/particles.min.js"></script>	
 </body>
 </html>
 

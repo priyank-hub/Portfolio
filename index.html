@@ -8,11 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="hexagon2.css">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
@@ -26,6 +27,7 @@
 				selector: '.background',
 				color: '#9ceef3',
 				minDistance: 240,
+				speed: 0.75,
 				connectParticles: true,
 				maxParticles: 30,
 				responsive: [
@@ -354,12 +356,14 @@
 		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
 			<path d="M0 0 L50 100 L100 0 Z" fill="#808499"></path>
 		</svg>
+		<div class="backtotop">
+			<button style="width: 40px; height: 70px" onclick="location.href='#home'">↑</button>
+		</div>
 
 		<div class="heading">CONTACT ME</div>
 		<div style="position: relative; height: 2px; background-color: white; margin-top: 5px; width: 18%; left: 41%;"></div>
 		
 		<div class="form" style="position: relative; width: 100%; text-align: center; height: 100%; margin-top: 10px;">
-
 				<p class="haveu" style="font-family: 'Raleway'; font-size: 1rem; font-weight: 400; color: 
 					white; width: 100%; text-align: center; position: relative;">Have a question or want to work together?</p>
 		
@@ -387,6 +391,7 @@
 				<img src="./assets/instagram.png">
 			</a>
 		</div>
+		<p class="foot">PRIYANK <span class="foot" style="color: #e31b6d;">PATEL</span></p>
 	</section>
 	<canvas class="background"></canvas>
 	<script src="./assets/particles.min.js"></script>	

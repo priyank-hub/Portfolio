@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style2.css">
+	<link rel="stylesheet" type="text/css" href="./css/nav.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	
+	<script src="./anim.js"></script>
+	<script>
+		window.onload = function() {
+			Particles.init({
+				selector: '.background',
+				color: '#9ceef3',
+				minDistance: 240,
+				speed: 0.75,
+				connectParticles: true,
+				maxParticles: 30,
+				responsive: [
+					{
+						breakpoint: 768,
+						options: {
+							maxParticles: 20,
+							connectParticles: true
+						}
+					},
+					{
+						breakpoint: 425,
+						options: {
+							maxParticles: 10,
+							connectParticles: true
+						}
+					}
+				]
+			});
+		};
+	</script>
+</head>
+
+<body style="width: 100%">
+	<section class="one" id="home" style="height: 100vh">
+		<div style="position: relative; height: 100%">
+			<div class="pic">
+				<img class="prosym" src="./assets/head/p.png">
+			</div>
+			<div class="head">
+				<span style="font-family: 'Raleway'; font-size: 4vw; color: #656060;"><p class="up">Hello, I'm <span style="color: white">Priyank</span>.</p> <p class="down">Welcome to my Portfolio</p></span>
+			</div>
+			<div class="buttons">
+				<div class="butn">
+					<button class="viewmore"><a href="#two" style="color: white; text-decoration: none; font-size: 1.5rem">View More</a></button>
+				</div>
+				<div class="butn">
+					<button class="sayhello"><a href="#fourth" style="color: white; text-decoration: none; font-size: 1.5rem">Say hello!</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button onclick="collap()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav topn">
+					<a href="#home" class="highcolor" id="active">HOME</a>
+					<a href="#two" onclick="active(this)">ABOUT</a>
+					<a href="#three" onclick="active(this)">PROJECTS</a> 
+					<a href="#fourth" onclick="active(this)">CONTACT ME</a>
+				</div>
+			</div>
+		</nav>
+		<div style="height: 3px; width: 100%; background-color: #117a8b;"></div>
+	</div>	
+
+	<!-- About -->
+	<section class="second" id="two"> 
+
+	
+		<div class="xyz" id="xyz">
+			<div class="intro">
+				<p class="greet">Nice to meet you!</p> 
+				<p class="my">
+					I am an undergraduate student at York University, Toronto. My major is Computer Science and I will be completing my Bachelors degree from Lassonde School of Engineering in April 2021. A Smart programmer and I enjoy applying my skills to my personal and collaborative projects. Fond of database management, full stack development,Object-Oriented programming and machine learning.
+				</p>
+			</div>
+
+			<div class="main">
+				<div class="heading" style="margin-top: 4vh; margin-bottom: 2vh; color: black; font-weight: 300;">Technical Skills</div>
+				<div class="cover">
+					<div class="hd">HTML</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class="bars progress-bar" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 10%; text-align: center; height: 30px"> 
+							<p class="perc">90% </p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="cover">
+					<div class="hd">CSS</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 10%; text-align: center; height: 30px"> 
+							<p class="perc">90% </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="hd">JavaScript</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 85%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 15%; text-align: center; height: 30px"> 
+							<p class="perc">85% </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="hd">React-JS</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 25%; text-align: center; height: 30px"> 
+							<p class="perc">75% </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="hd">Node.js</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 40%; text-align: center; height: 30px"> 
+							<p class="perc">60% </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="hd">Ruby/Rails</div>
+					<div class="p progress">
+						<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 30%; text-align: center; height: 30px"> 
+							<p class="perc">70% </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cover">
+					<div class="hd">Sketch</div>
+					<div class="p progress">
+					<div data-aos="slide-right" data-aos-duration="2000" class=" bars progress-bar" role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						<div style="width: 25%; text-align: center; height: 30px;"> 
+							<p class="perc">75% </p>
+						</div>
+					</div>
+				</div>
+
+				<img src="./assets/head/drawing.svg" class="hide">
+
+				<div class="heading" style="margin-top: 50px; color: black; font-weight: 300;">Certifications</div>
+				<div class="card-deck cd">
+					<div class="crd I">
+					  <img src="./assets/cert.png" class="pic1 ap" alt="..." style="width: 90px; height: 100px;">
+						<p class="h" style="text-align: center; font-size: 1.3rem;">Intro to ML: Language Processing</p>
+						<p class="" style="text-align: center;"><small class="text-muted">Google Developer Group (GDG) Cloud Toronto</small></p>
+					</div>
+					<div class="crd II">
+						<img src="./assets/cert.png" class="pic1 bp" alt="..." style="width: 90px; height: 100px;">	
+							<p class="h" style="text-align: center; font-size: 1.3rem;">Ruby on Rails 6 Essential Learning</p>
+							<p class="" style="text-align: center;"><small class="text-muted">LinkedIn Learning</small></p>
+					</div>
+					<div class="crd III">
+						<img src="./assets/cert.png" class="pic1 cp" alt="..." style="width: 90px; height: 100px;">	
+						<p class="h" style="text-align: center; font-size: 1.3rem;">Complete Web Developer 2020: Zero to Mastery</p>
+						<p class="" style="text-align: center;"><small class="text-muted">Udemy</small></p>
+					</div>	
+				</div>
+		</div>	
+	</section>
+
+	<section class="third" id="three">
+		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+			<path d="M0 0 L50 100 L100 0 Z" fill="#87cefa"></path>
+		</svg>
+
+		<div class="heading">PROJECTS</div>
+		<div style="position: relative; height: 2px; background-color: white; margin-top: 2.1vh; width: 18%; left: 41%;"></div>
+		
+		
+
+		<div class="subnav">
+			<button class="btn active b1" onclick="filterSelection('all')" style="font-size: 1.2rem; outline: none;">All</button>
+			<button class="btn b1" onclick="filterSelection('primary')" style="font-size: 1.2rem;">Primary</button>
+			<button class="btn b1" onclick="filterSelection('opensource')" style="font-size: 1.2rem;">Ruby / Rails</button>
+			<button class="btn b1" onclick="filterSelection('reactjs')" style="font-size: 1.2rem;">React-JS</button>
+		</div>
+
+		<div class="grid-container">
+			<div class="container animate filterDiv primary a1">
+				<img src="./assets/project/tictactoe.jpg" alt="Avatar" class="image">
+				<div class="overlay2">
+					<div class="text2">
+						<p>Tic-Tac-Toe</p>
+						<p style="color: white">Android Studio</p>
+					</div>
+				</div>
+
+				<div class="overlay">
+					<button>+</button>
+				</div>
+			</div>
+			<div class="container animate filterDiv primary a2">
+				<img src="./assets/project/weatherinfo.png" alt="Avatar" class="image">
+				<div class="overlay2">
+					<div class="text2">
+						<p>WeatherInfo</p>
+						<p style="color: white">HTML / JS / API</p>
+					</div>
+				</div>
+				<div class="overlay">
+					<button style="border: none; background-color: transparent; color: white;" onclick="window.open('https://priyank-hub.github.io/weatherinfo/event.html')">+</button>
+				</div>
+			</div>
+			<div class="container animate filterDiv reactjs a3">
+				<img src="./assets/project/smartbrain.png" alt="Avatar" class="image">
+				<div class="overlay2">
+					<div class="text2">
+						<p>SmartBrain Facial Recognition App</p>
+						<p style="color: white">React-JS</p>
+					</div>
+				</div>
+				<div class="overlay">
+					<button style="border: none; background-color: transparent; color: white;">+</button>
+				</div>
+			</div>
+			
+			<div class="container animate filterDiv reactjs a4">
+				<img src="./assets/project/robofriends.jpg" alt="Avatar" class="image">
+				<div class="overlay2">
+					<div class="text2">
+						<p>RoboFriends</p>
+						<p style="color: white">React-JS</p>
+					</div>
+				</div>
+				<div class="overlay">
+					<button style="border: none; background-color: transparent; color: white;" onclick="window.open('https://priyank-hub.github.io/Robofriends/')">+</button>
+				</div>
+			</div>
+		</div>
+		<script>
+			var slideUp = {
+				distance: '80%',
+				origin: 'bottom',
+				opacity: null
+			};
+
+			var slideLeft = {
+				distance: '150%',
+				origin: 'left',
+				opacity: null
+			};
+
+			var slideRight = {
+				distance: '150%',
+				origin: 'right',
+				opacity: null
+			};
+
+			var flipX = {
+				distance: '0%',
+				origin: 'center'
+
+			}
+			// first
+			
+			ScrollReveal().reveal('.bars', slideLeft);
+			ScrollReveal().reveal('.bars', {duration: 2000});
+			ScrollReveal().reveal('.bars', {easing: 'ease-in-out'});
+			ScrollReveal().reveal('.I', {
+				rotate: {
+					x: 0,
+					y: 180,
+					z: 0
+				}
+			});
+			ScrollReveal().reveal('.I', {duration: 1000});
+			ScrollReveal().reveal('.I', {easing: 'ease-in-out'});
+
+			ScrollReveal().reveal('.II', {
+				rotate: {
+					x: 0,
+					y: 180,
+					z: 0
+				}
+			});
+			ScrollReveal().reveal('.II', {duration: 1000});
+			ScrollReveal().reveal('.II', {easing: 'ease-in-out'});
+			ScrollReveal().reveal('.II', {delay: 300});
+
+			ScrollReveal().reveal('.III', {
+				rotate: {
+					x: 0,
+					y: 180,
+					z: 0
+				}
+			});
+			ScrollReveal().reveal('.III', {duration: 1000});
+			ScrollReveal().reveal('.III', {easing: 'ease-in-out'});
+			ScrollReveal().reveal('.III', {delay: 300});
+
+			filterSelection("all")
+			function filterSelection(c) {
+			  var x, i;  
+			  x = document.getElementsByClassName("filterDiv");
+
+			  if (c == "all") c = "";
+			  for (i = 0; i < x.length; i++) {
+				x[i].classList.remove("show");
+				if (x[i].className.indexOf(c) > -1) {
+					x[i].classList.add("show");
+				}
+			  }
+			
+			  var btnContainer = document.querySelector(".subnav");
+				var btns = btnContainer.getElementsByClassName("btn");
+				for (var i = 0; i < btns.length; i++) {
+				btns[i].addEventListener("click", function(){
+					var current = document.getElementsByClassName("active");
+					current[0].classList.remove("active");
+					this.classList.add("active");
+				});
+				}
+			}
+			
+			
+			</script>
+	</section>
+	<section class="fourth" id="fourth">
+		<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+			<path d="M0 0 L50 100 L100 0 Z" fill="#808499"></path>
+		</svg>
+		<div class="backtotop">
+			<button style="width: 40px; height: 70px" onclick="location.href='#home'">↑</button>
+		</div>
+
+		<div class="heading">CONTACT ME</div>
+		<div style="position: relative; height: 2px; background-color: white; margin-top: 5px; width: 18%; left: 41%;"></div>
+		
+		<div class="form" style="position: relative; width: 100%; text-align: center; height: 100%; margin-top: 10px;">
+				<p class="haveu" style="font-family: 'Raleway'; font-size: 1rem; font-weight: 400; color: 
+					white; width: 100%; text-align: center; position: relative;">Have a question or want to work together?</p>
+		
+				<form action="https://formspree.io/xyynynba" method="POST">
+					<input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+					<input type="text" id="email" name="email" placeholder="Email.."><br>
+				
+					<textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+				
+					<input type="submit" value="Submit" id="submit">
+				</form>
+		</div>
+
+		<div class="flexrow">
+			<a href="https://www.linkedin.com/in/priyank9" class="flexcolumn linkedin" style="cursor: pointer;" target="blank">
+				<img src="./assets/linkedin.png">
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100005557957435" class="flexcolumn" style="cursor: pointer;" target="blank">
+				<img src="./assets/facebook.png">
+			</a>
+			<a href="https://github.com/priyank-hub" class="flexcolumn" style="cursor: pointer;" target="blank">
+				<img src="./assets/github.png">
+			</a>
+			<a href="https://www.instagram.com/p1ku_22/" class="flexcolumn" style="cursor: pointer;" target="blank">
+				<img src="./assets/instagram.png">
+			</a>
+		</div>
+		<p class="foot">PRIYANK <span class="foot" style="color: #e31b6d;">PATEL</span></p>
+	</section>
+	<canvas class="background"></canvas>
+	<script src="./assets/particles.min.js"></script>	
+</body>
+</html>
+
